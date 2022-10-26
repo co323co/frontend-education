@@ -13,6 +13,8 @@ import { solutionMicroMacroTask } from './section-one/solution';
 import { mutationObserver } from './section-one/observer-api';
 import { execIntersection } from './section-one/intersection-api';
 import { execClosure } from './section-two/state';
+import { debounce } from "./section-two/debounce";
+
 import {
     execAutoComplete,
     execDoubleClick,
@@ -46,3 +48,11 @@ const inlineTest = () => {
     inlineCashingTest();
     inlineCashingTestByDeOptimize();
 };
+execClosure();
+// function hello(val:string) {
+//     console.log(val)
+// }
+// let fun:Function = debounce(hello, 1);
+// fun('hello1');
+// fun('hello2');
+// fun('hello3');
